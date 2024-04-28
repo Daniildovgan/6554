@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int number1, number2;
+    cout << "Введіть перше число: ";
+    cin >> number1;
+    cout << "Введіть друге число: ";
+    cin >> number2;
+
+    if (number1 == number2) {
+        cout << "Введені числа рівні." << endl;
+    } else {
+        cout << "Введені числа не рівні." << endl;
+        if (number1 < number2) {
+            cout << "Числа у порядку зростання: " << number1 << ", " << number2 << endl;
+        } else {
+            cout << "Числа у порядку зростання: " << number2 << ", " << number1 << endl;
+        }
+    }
+
+    return 0;
+}
